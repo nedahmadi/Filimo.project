@@ -21,7 +21,7 @@ a {
   cursor: pointer;
 }
 .logofilimo {
-  width: 85px;
+  width: 75px;
   margin-right: -80px;
   cursor: pointer;
   border-left: 1px solid rgba(255, 255, 255, 0.3);
@@ -29,6 +29,12 @@ a {
 }
 .filimomadrese {
   position: relative;
-  bottom: 10px;
+  bottom: 8px;
   right: 200px;
+}
+.search {
+  position: relative;
+  bottom:8px ;
+  right: 220px;
+
 }
