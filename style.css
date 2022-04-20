@@ -1,0 +1,35 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+ul {
+  list-style-type: none;
+
+  font-size: 17px;
+}
+.header1,
+.header2,
+.header3 {
+  display: inline-block;
+}
+
+.filimo-madrese:hover {
+  color: #f9ad03;
+}
+.search:hover {
+  color: #f9ad03;
+}
+a {
+  text-decoration: none;
+  transition: all 0.3s ease-out;
+  color: white;
+}
+.logofilimo {
+  width: 90px;
+  position: relative;
+  left: 1150px;
+}
+.container {
+  background-color: black;
+  background-attachment: fixed;
+}
