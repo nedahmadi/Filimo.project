@@ -1,35 +1,34 @@
 body {
   margin: 0;
-  padding: 0;
 }
+
 ul {
+  background-color: #040404;
   list-style-type: none;
-
-  font-size: 17px;
+  text-align: right;
+  margin: 0;
+  padding: 10px;
 }
-.header1,
-.header2,
-.header3 {
+
+li {
   display: inline-block;
-}
-
-.filimo-madrese:hover {
-  color: #f9ad03;
-}
-.search:hover {
-  color: #f9ad03;
+  font-size: 16px;
+  cursor: pointer;
 }
 a {
   text-decoration: none;
-  transition: all 0.3s ease-out;
-  color: white;
+  color: #e1e1e1;
+  cursor: pointer;
 }
 .logofilimo {
-  width: 90px;
-  position: relative;
-  left: 1150px;
+  width: 100px;
+  margin-right: -80px;
+  cursor: pointer;
+  border-left: 1px solid rgba(255, 255, 255, 0.3);
+  padding: 0 0 0 32px;
 }
-.container {
-  background-color: black;
-  background-attachment: fixed;
+.filimomadrese {
+  position: relative;
+  bottom: 10px;
+  right: 200px;
 }
