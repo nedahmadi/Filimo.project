@@ -13,10 +13,11 @@
   <body>
     <header>
    
-     <div class="container">
+     <div class="wholefirst">
             <ul>
               <li>
-           <a href="https://www.filimo.com/home" title="رفتن به صفحه اصلی فیلیمو" >
+           <a href="https://www.filimo.com/home" title="رفتن به صفحه اصلی فیلیمو" 
+           class="homefilimo">
                
           <img src="images/filimo.png" alt="logofilimo" title="رفتن به صفحه اصلی فیلیمو"
           class="logofilimo" /> 
@@ -28,8 +29,6 @@
  <a href="https://www.filimo.com/search" class="search">
    <img src="images/search-icon-png-white-3.jpg" alt="search-icon" class="search-icon">
 
-
-    
  
 جستجو</a>
 
@@ -48,30 +47,77 @@
  </a>
         </li>
         <li>
-        <a href= "https://www.filimo.com/signin" class="signin">
-
-        
-          ورود
-          </a>
+        <a href= "https://www.filimo.com/signin" class="signin">   ورود
+        </a>
         </li>
 
-       
  </ul>
      </div>
- 
-
-  
-
-  
- 
- 
-            </header>
+     </header>
    
 
+ <main class="container">
+<p class="title1">با فیلیمو بی وقفه فیلم ببین</p>
+<p class="title2"> تماشای نامحدود هزاران فیلم و سریال بروز ایرانی و خارجی برای تمام اعضای خانواده با یک اشتراک </p>
 
-
-            
-
+<div class="mySlides fade">
+  
+  <img src="images/spider.jpg"  style="width: 100%" height="450">
  
+</div>
+<div class="mySlides fade">
+  
+  <img src="images/shahre.jpg" style="width:100%" height="450"
+  background-color="#AA4924">
+</div>
+  
+ <div class="mySlides fade">
+
+  <img src="images/ttttt.jpg" style="width:100%" height="450">
+ </div> 
+  <!-- <div class="text">Caption Three</div>
+</div> -->
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+</div> -->
+ </main>
+
+ <div class="section2">
+ </div>
+
+
+
+
+<script>
+let slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 7000); // Change image every 2 seconds
+}
+</script>
+
+           
+
+
   </body>
 </html>
